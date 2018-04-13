@@ -13,8 +13,6 @@ import com.nbs.samplepageindicator.R;
 public class DotsIndicator {
     private final FrameLayout flIndicator;
 
-    public static final float DEFAULT_WIDTH_FACTOR = 2.5f;
-
     private LinearLayout llDots;
 
     private Context context;
