@@ -80,7 +80,7 @@ public class DotsIndicator {
     }
 
     void onScroll(int pos, int right, int size) {
-        int containerSize = (llDots.getContext().getResources().getDisplayMetrics().widthPixels / 2);
+//        int containerSize = (llDots.getContext().getResources().getDisplayMetrics().widthPixels / 2);
         if (right < size){
             pos += 1;
         }
