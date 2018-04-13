@@ -15,13 +15,10 @@ public class DotsIndicator {
 
     private LinearLayout llDots;
 
-    private Context context;
-
     private int savedPos;
 
     public DotsIndicator(FrameLayout flIndicator) {
         this.flIndicator = flIndicator;
-        this.context = flIndicator.getContext();
         savedPos = -1;
     }
 
@@ -88,9 +85,5 @@ public class DotsIndicator {
     @Deprecated
     public void onScroll(int pos, View v, int size) {
         onScroll(pos, v.getRight(), size);
-    }
-
-    private int dpToPx(int dp) {
-        return (int) (context.getResources().getDisplayMetrics().density * dp);
     }
 }
