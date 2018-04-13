@@ -74,16 +74,11 @@ public class DotsIndicator {
         flIndicator.setVisibility(visibility);
     }
 
-    void onScroll(int pos, int right, int size) {
-//        int containerSize = (llDots.getContext().getResources().getDisplayMetrics().widthPixels / 2);
-        if (right < size){
+    public void onScroll(int pos, int rightPosition, int size) {
+        //int containerSize = (llDots.getContext().getResources().getDisplayMetrics().widthPixels / 2);
+        if (rightPosition < size){
             pos += 1;
         }
         updateDots(pos);
-    }
-
-    @Deprecated
-    public void onScroll(int pos, View v, int size) {
-        onScroll(pos, v.getRight(), size);
     }
 }
