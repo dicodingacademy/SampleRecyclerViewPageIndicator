@@ -7,7 +7,9 @@ import android.widget.FrameLayout;
 
 public class DotsIndicatorHelper {
     private DotsIndicator dotsIndicator;
+
     private LinearLayoutManager layoutManager;
+
     private Context context;
 
     public DotsIndicatorHelper(Context context, FrameLayout viewContainer, RecyclerView recyclerView, LinearLayoutManager layoutManager) {

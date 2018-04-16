@@ -1,8 +1,6 @@
 package com.nbs.samplepageindicator.custom;
 
-import android.content.Context;
 import android.view.Gravity;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -23,12 +21,12 @@ public class DotsIndicator {
     }
 
     public void init() {
-        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT);
         params.gravity = Gravity.CENTER;
         llDots = new LinearLayout(flIndicator.getContext());
         llDots.setLayoutParams(params);
         this.flIndicator.addView(llDots);
-
     }
 
     public void initDots() {
